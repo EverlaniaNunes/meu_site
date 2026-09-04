@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff7fb;
+    color: #4a3040;
+}
+
+/* CABEÇALHO */
+
+header {
+    background: linear-gradient(90deg, #e8a4c9, #c9a7df);
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* INÍCIO */
+
+.inicio {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.inicio h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #a34f7d;
+}
+
+.inicio p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #c77bad;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+}
+
+.botao:hover {
+    background-color: #a85d8e;
+}
+
+
+/* TRABALHOS */
+
+#trabalhos {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#trabalhos h2 {
+    color: #a34f7d;
+    margin-bottom: 35px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.produto {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+.produto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.produto h3 {
+    margin: 15px 0 8px;
+    color: #a34f7d;
+}
+
+.produto p {
+    color: #6b5360;
+}
+
+
+/* CONTATO */
+
+.contato {
+    background-color: #f1e3f5;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contato h2 {
+    color: #8b5a9d;
+    margin-bottom: 15px;
+}
+
+.contato p {
+    margin-bottom: 25px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.links a {
+    background-color: white;
+    color: #8b5a9d;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.links a:hover {
+    background-color: #e8c9ed;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background-color: #4a3040;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .inicio h2 {
+        font-size: 26px;
+    }
+
+    .inicio {
+        padding: 60px 20px;
+    }
+
+    .produto img {
+        height: 250px;
+    }
+}
